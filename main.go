@@ -67,9 +67,9 @@ func (m *SimpleMilter) Abort(esmtpArgs *milter.Modifier) error {
 }
 
 func main() {
-	listener, err := net.Listen("tcp", ":7357")
+	listener, err := net.Listen("tcp", ":17357")
 	if err != nil {
-		slog.ErrorContext(context.Background(), "Failed to listen on port 7357", "error", err)
+		slog.ErrorContext(context.Background(), "Failed to listen on port 17357", "error", err)
 		return
 	}
 	defer listener.Close()
