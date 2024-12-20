@@ -79,7 +79,7 @@ func main() {
 			return &SimpleMilter{}
 		},
 		Actions:  milter.OptAction(milter.OptAddRcpt),
-		Protocol: milter.OptProtocol(milter.OptNoHelo),
+		Protocol: milter.OptProtocol(0),
 	}
 	server.Serve(listener)
 	defer server.Close()
