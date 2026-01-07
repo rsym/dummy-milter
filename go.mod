@@ -1,6 +1,6 @@
 module dummy_milter
 
-go 1.23.0
+go 1.25.0
 
 require github.com/emersion/go-milter v0.4.1
 
